@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Задача 2_2</title>
+</head>
+<body>
+
+<p id="demo">Нажмите на кнопку "1 задача", чтобы вычислить значение выражения (x^(n^2))/(2^n).</p>
+<p id="demo">Нажмите на кнопку "2 задача", чтобы вычислить значение выражения (x^(n^3))/(3^n).</p>
+<script>
+function myFunction()
+{
+var x=prompt("x?","");
+var n = prompt("n?","");
+if(n<1)
+{
+alert('Ошибка, начните заново');
+
+}
+var x;
+var n;
+var res;
+
+var res = (Math.pow(x, Math.pow(n,2)))/(Math.pow(2,n));
+alert(res);
+}
+
+
+function myFunction1()
+{
+var x=prompt("x?","");
+var n = prompt("n?","");
+if(n<1)
+{
+alert('Ошибка, введите натуральное число');
+
+}
+var x;
+var n;
+var res;
+
+var res = (Math.pow(x, Math.pow(n,3)))/(Math.pow(3,n));
+alert(res);
+}
+</script>
+<button onclick="myFunction()">1 задача</button>
+<button onclick="myFunction1()">2 задача</button>
+</body>
+</html>
